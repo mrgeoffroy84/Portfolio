@@ -6,17 +6,32 @@ h1 {
 
 .grid-container {
     display: grid;
-    grid-template: 250px 1fr / 250px 1fr;
+    grid-template-areas: 'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    grid-gap: 10px;
     background-color: darkslategray;
 }
 
-.grid-item {
+.item1 {
+    grid-area: header;
     color:rgb(212, 218, 224);
-    margin-top: 30%;
     text-align: center;
 }
 
-.grid-item2 {
-    width: 250px;
-    margin-left: 200px;
+.item2 {
+    grid-area: menu;
+    color:rgb(144, 189, 234);
+}
+
+.item3 {
+    grid-area: main;
+    color:rgb(212, 218, 224);
+}
+
+.item4 {
+    grid-area: right;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
