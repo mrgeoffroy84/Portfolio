@@ -1,0 +1,22 @@
+h1 {
+    display: flex;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 250px 1fr / 250px 1fr;
+    background-color: darkslategray;
+}
+
+.grid-item {
+    color:rgb(212, 218, 224);
+    margin-top: 30%;
+    text-align: center;
+}
+
+.grid-item2 {
+    width: 250px;
+    margin-left: 200px;
+}
