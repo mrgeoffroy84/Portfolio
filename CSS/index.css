@@ -4,6 +4,10 @@ h1 {
     font-family: sans-serif;
 }
 
+a {
+    color:rgb(212, 218, 224);
+}
+
 .grid-container {
     display: grid;
     grid-template-areas: 'header header header header header header'
@@ -34,4 +38,9 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.item5 {
+    grid-area: footer;
+    color:rgb(144, 189, 234);
 }
